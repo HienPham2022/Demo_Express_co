@@ -1,0 +1,23 @@
+{
+  "name": "demo_express_co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HienPham2022/Demo_Express_co.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HienPham2022/Demo_Express_co/issues"
+  },
+  "homepage": "https://github.com/HienPham2022/Demo_Express_co#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
