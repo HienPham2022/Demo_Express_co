@@ -3,6 +3,13 @@ const app = express();
 app.get('/',(req,res)=>{
     res.send('hello world')
 });
+app.get('/json',(req,res)=>{
+    var json ={
+        name:'hien',
+        age:18
+    };
+    res.json(json);
+})
 app.get('/abc',(req,res)=>{
     res.send('hello from abc');
 });
