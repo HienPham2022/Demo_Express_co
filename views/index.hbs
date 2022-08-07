@@ -1,0 +1,39 @@
+<h1>welcome to my page</h1>
+<h2>Demo handlebars</h2>
+{{!-- dùng if --}}
+{{#if user.islogin}}
+<p>hello {{{name}}}</p>
+<p>how is the wethear in {{location}}?</p>
+{{else}}
+<button>Please login </button>
+{{/if}}
+
+{{!-- dùng unless --}}
+{{#unless user.islogin}}
+<button>Please login </button>
+{{else}}
+<p>hello {{{name}}}</p>
+<p>how is the wethear in {{location}}?</p>
+{{/unless}}
+
+{{!-- each --}}
+{{#each language}}
+    {{@index}}.{{this}}<br/>
+{{/each}}
+<ol>
+    {{#each language}}
+    <li>{{this}}</li>
+    {{/each}}
+</ol>
+
+<ul>
+    {{#each links}}
+    <li><a href="{{url}}">{{title}}</a></li>
+    {{/each}}
+</ul>
+{{!-- điều khiển with --}}
+<h2>User addrress</h2>
+{{#with user}}
+{{ address.street}}{{address.city}}
+{{{../name}}}
+{{/with}}
